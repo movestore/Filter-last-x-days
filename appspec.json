@@ -1,0 +1,70 @@
+{
+  "settings": [
+    {
+      "id": "time_now",
+      "name": "Reference timestamp",
+      "description": "Define you reference time - the time from which you want to select 'back' your data. If your tags are still running and you are in the field, this is typically NOW. Here, if you dont enter anything, per default NOW will be used.",
+      "defaultValue": null,
+      "type": "INSTANT"
+    },
+    {
+      "id": "dur",
+      "name": "Duration of data to select",
+      "description": "Provide the time duration (select unit below) that you want to filter your data for. I.e. Data of how many e.g. days in the past do you want to select? Defaults to 14 (days).",
+      "defaultValue": 14,
+      "type": "DOUBLE"
+    },
+	{
+      "id": "dur_unit",
+      "name": "Time duration unit",
+      "description": "Select the unit for your duration variable.",
+      "defaultValue": "days",
+      "type": "DROPDOWN",
+      "options": [
+        {
+          "value": "hours",
+          "displayText": "hour(s)"
+        },
+		{
+          "value": "days",
+          "displayText": "day(s)"
+        },
+		{
+          "value": "weeks",
+          "displayText": "week(s)"
+        }
+      ]
+    }	
+  ],
+  "dependencies": {
+    "R": [
+      {
+        "name": "move"
+      }
+	]
+  },
+  "license": {
+    "key": "MIT"
+  },
+  "language": "eng",
+  "keywords": [
+    "filter",
+    "time range",
+	"time"
+  ],
+  "people": [
+    {
+      "firstName": "Andrea",
+      "middleInitials": null,
+      "lastName": "Kölzsch",
+      "email": "akoelzsch@ab.mpg.de",
+      "roles": ["author", "creator"],
+      "orcid": "0000-0003-0193-1563",
+      "affiliation": "Max-Planck-Institute of Animal Behavior",
+      "affiliationRor": "https://ror.org/026stee22"
+    }
+  ],
+  "documentation" : {
+    "url": "https://github.com/movestore/Filter-last-x-days/blob/main/README.md"
+  }
+}
