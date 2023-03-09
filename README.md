@@ -18,19 +18,19 @@ moveStack in Movebank format
 ### Artefacts
 none
 
-### Parameters 
-`time_now`: reference/end timestamp towards which the data selection is performed. Generally (and by default) this is NOW, especially if in the field and looking for one or the other animal. When analysing older data sets, this parameter can be set to other timestamps so that the to be plotted data fall into a selected back-time window. 
+### Settings 
+**Reference timestamp (`time_now`):** reference/end timestamp towards which the data selection is performed. Generally (and by default) this is NOW, especially if in the field and looking for one or the other animal. When analysing older data sets, this parameter can be set to other timestamps so that the to be plotted data fall into a selected back-time window. 
 
-`dur`: Duration number of the data to be selected. Unit below. Default 14.
+**Duration of data to select (`dur`):** Duration number of the data to be selected. Unit below. Default 14.
 
-`dur_unit`: Duration unit for variable `dur`. Can be `hours`, `days` or `weeks`. Default `days`.
+**Time duration unit (`dur_unit`):** Duration unit for variable `dur`. Can be `hours`, `days` or `weeks`. Default `days`.
 
 
 ### Null or error handling:
-**Parameter `time_now`:** If this parameter is left empty (NULL) the reference time is set to NOW. The present timestamp is extracted in UTC from the MoveApps server system.
+**Setting `time_now`:** If this parameter is left empty (NULL) the reference time is set to NOW. The present timestamp is extracted in UTC from the MoveApps server system.
 
-**Parameter `dur`:** Duration NULL defaults to 14 (days).
+**Setting `dur`:** Duration NULL defaults to 14 (days).
 
-**Parameter `dur_unit`:** Duration defaults to `days`. Only regular time units can be used (see above).
+**Setting `dur_unit`:** Duration defaults to `days`. Only regular time units can be used (see above).
 
 **Data:** If none of the locations in the input data set lie in the requested time range, a warning is given and a NULL data set is returned. The NULL return value likely produces an error.
