@@ -39,7 +39,7 @@
   "dependencies": {
     "R": [
       {
-        "name": "move"
+        "name": "move2"
       }
 	]
   },

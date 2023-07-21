@@ -7,13 +7,13 @@ Github repository: *github.com/movestore/Filter-last-x-days*
 Takes an end timestamp (default NOW) and filters to all locations in the past X time units.
 
 ## Documentation
-This App filters locations from a Movement data set to a time range that is defined by an end timestamp and time duration (number and unit) given by the user. Locations of all animals are considered.
+This App filters locations from a move2 location object set to a time range that is defined by an end timestamp and time duration (number and unit) given by the user. Locations of all animals are considered.
 
 ### Input data
-moveStack in Movebank format
+move2 location object
 
 ### Output data
-moveStack in Movebank format
+move2 location object
 
 ### Artefacts
 none
